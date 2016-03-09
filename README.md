@@ -7,7 +7,7 @@ This project is part of "Learn IT, Girl" program. My amazing mentor is Anahita D
 ##How to use this Repository
 There are two main contents in this repository: 
 - The files of the hiragana project
-- and the resources that helped me to learn Ruby (in /extras folder)
+- The resources that helped me to learn Ruby (in /extras folder)
 
 ##What is "Learn IT, Girl!"?
 Learn IT Girl is a mentorship program for women around the globe. The aim is to help women learn a programming language for free while doing an project with the help of a mentor.
