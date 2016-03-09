@@ -1,3 +1,0 @@
-Ruby - Extra Resources
-
-Articles
