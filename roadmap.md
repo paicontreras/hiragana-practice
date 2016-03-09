@@ -20,7 +20,7 @@ When you learn Japanese, you need to memorize two complete syllabaries of 46 sym
 
 **Week 4**
 - [ ] Download Ruby and an editor
-- [ ] Start creating some test
+- [ ] Start tests of the program
 - [ ] Create wireframes for the UI of the program
 
 **Week 5 and 6 **
