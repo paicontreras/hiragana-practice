@@ -21,8 +21,7 @@ multi_array[0][2] = 2
 ```
 
 To add an element at the end of an array
-[1, 2, 3]<<4 = [1, 2, 3, 4]
-
+```[1, 2, 3]<<4 = [1, 2, 3, 4]```
 
 ##Hashes
 **Literal notation**
@@ -38,4 +37,21 @@ puts my_hash["key1"]
 ```
 my_hash = Hash.new
 my_hash["key1"] = "value1"
+```
+Delete a hash key
+```
+my_hash.delete(key)
+```
+Iterate over a hash
+```
+hash.each {|key, value|    }
+```
+Select a certain criteria
+```
+hash.select {|key, value| value < 97}
+```
+Iterate over keys or certain values only
+```
+hash.each_key
+hash.each_value
 ```
