@@ -1,6 +1,6 @@
 #Ruby Study Notes
 
-###Data types
+##Data types
 - Numbers = 1, -1, -1.0, 597
 - Strings = "hello"
 - Array = [ 1, 99, 2]
@@ -9,7 +9,7 @@
 - Boolean = true, false, nil 
 - Constants = "value"
 
-###Array
+##Array
 ```
 my_array = [1, 2, true, "no"]
 my_array[2] = true
@@ -24,8 +24,7 @@ multi_array[0][2] = 2
 [1, 2, 3]<<4 = [1, 2, 3, 4]
 ```
 
-###Hashes
-
+##Hashes
 **Literal notation**
 ```
 my_hash = {
@@ -34,4 +33,9 @@ key2: value2,
 key3: value3
 }
 puts my_hash["key1"] 
+```
+**Constructor notation**
+```
+my_hash = Hash.new
+my_hash["key1"] = "value1"
 ```
