@@ -276,8 +276,8 @@ nameofvariable = lambda {|param| block}
 
 ##Some methods
 - `.nil?` are you nil? are you empty?
-- `.length` example "i love tokyo".length = 12
-- `.reverse` reverse a string. example "bota".reverse = "atob"
+- `.length` `"i love tokyo".length = 12`
+- `.reverse` reverse a string `"bota".reverse = "atob"`
 - `.reverse!` modify and reverse a string
 - `.upcase` 
 - `.downcase`
@@ -285,7 +285,7 @@ nameofvariable = lambda {|param| block}
 - `.capitalize!`
 - `.x!` modifies an input without creating a copy
 - `.x?` evaluate boolean true or false values
-- `.gets` obtains input from the user. example: gets.chomp
+- `.gets` obtains input from the user `gets.chomp`
 - `.chomp` delete a line after the user's input
 - `.include?` 
 - `.gsub` global substitution. Used for search and replace
@@ -296,18 +296,18 @@ nameofvariable = lambda {|param| block}
 - `.to_sym` convert to symbol
 - `.intern` convert to symbol
 - `.to_i` convert to integer
-- `.to_f` convert to float. example: 5.to_f = 5.0
+- `.to_f` convert to float `5.to_f = 5.0`
 - `.sort` return a new reorder array. From A to Z, 1 to 1000..
 - `.sort!` reorder an array and modifies it 
 - `.collect{|x|#}` 
 - `.collect!{|x|#}` 
 - `.object_id` gets the ID of an object
-- `.upto()` from a value up to a limit value. example: 95.upto(100){|x| print x, ""}
-- `.downto()` from a value down to a limit value. example: "Z".downto("A"){|x| puts x}
-- `.respond_to?` what methods that respond to an object. example: [1,2,3].respond_to?(:push) 
+- `.upto()` from a value up to a limit value. `95.upto(100){|x| print x, ""}`
+- `.downto()` from a value down to a limit value. `"Z".downto("A"){|x| puts x}`
+- `.respond_to?` what methods that respond to an object. `[1,2,3].respond_to?(:push)`
 - `.class` what kind of objects it is? A String, integer, float, etc
 - `.is_a?(String)` ask the kind of class. It is a string? a boolean?
-- `.has_key?("x")` return a boolean. example my_hash.has_a?("color") = true
+- `.has_key?("x")` return a boolean. `my_hash.has_a?("color") = true`
 - `.strip` delete spaces and lines in a string
 
 
@@ -317,7 +317,7 @@ nameofvariable = lambda {|param| block}
 - `w` writing
 - `r` reading
 - `a` add to end of a file
-- `*` 'idea-*.txt' 
+- `*` `'idea-*.txt'` 
 - `puts` puts everything in a new line
 - `return` returns a value. It's used in methods
 - `Integer` 
@@ -328,12 +328,24 @@ nameofvariable = lambda {|param| block}
 - `&&` and, both expressions are true
 - `||` or, one or the other are true
 - `!` not; makes true values false, and viceversa
-- `**` exponential -> 2***3 = 8
-- `%` remainder of division 25%7 = 4
+- `**` exponential `2***3 = 8`
+- `%` remainder of division `25%7 = 4`
 - `||=` assign a value to a variable only if doesn't have a value
-- `\n` new line -> 5.times {print "hello\n"}
+- `\n` new line `5.times {print "hello\n"}`
 - `#{hi}` strign interpolation
-- `<<` shovel, add an element at the end. example: "Bart" <<"Simpson" = "Bart Simpson"
-- `break` kicks you out of an iterating loop. break if i<0
-- `next` jumps a value. example: next if i % 2 == 0, print i
+- `<<` shovel, add an element at the end. `"Bart" <<"Simpson" = "Bart Simpson"`
+- `break` kicks you out of an iterating loop. `break if i<0`
+- `next` jumps a value. `next if i % 2 == 0, print i`
 - `nil` nothing at all, non-true value
+
+##Notes
+
+x += 1 -------- incrementa un valor a x
+
+1..10 -------- va de 1 incluyendo al 10
+
+1...10 -------- va de 1 a 9, excluye al 10
+
+string[0..-1] - refers to the range del primero hasta el final de los caracteres
+
+5/2 = 2 ------- para obtener decimales un numero al menos debe ser decimal: 5/2.0 = 2.5
