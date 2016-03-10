@@ -40,23 +40,34 @@ my_hash["key1"] = "value1"
 ```
 
 Default value
-```my_hash = Hash.new(0)```
+```
+my_hash = Hash.new(0)
+```
 
 Delete a hash key
-```my_hash.delete(key)```
+```
+my_hash.delete(key)
+```
 
 Iterate over a hash
-```hash.each {|key, value|    }```
+```
+hash.each {|key, value|    }
+```
 
 Select a certain criteria
-```hash.select {|key, value| value < 97}```
+```
+hash.select {|key, value| value < 97}
+```
 
 Iterate over keys only
-```hash.each_key```
+```
+hash.each_key
+```
 
 Iterate over values only
-```hash.each_value```
-
+```
+hash.each_value
+```
 
 ##Symbols
 In Ruby, a symbol is simply a name used in your program. It is used when you need a string but you don't want to print it
