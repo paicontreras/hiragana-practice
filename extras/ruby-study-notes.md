@@ -267,14 +267,14 @@ end
 ##Blocks
 Blocks are not objects, but a way to create methods without a name. Can be combined with methods like .each and .times).
 
-(for multiple lines):
+**for multiple lines**:
 ```
 blockname do
   #do something
 end
 ```
 
-(for a single line):
+**for a single line**:
 ```
 blockname{}
 ```
@@ -284,8 +284,9 @@ yield
 def method_name(parameter)
 yield parameter
 end
-```
+
 method_name(argument) {#block]
+```
 
 ##Procs
 Procs are objects. A proc is a saved block we can use over and over.
@@ -294,7 +295,6 @@ name = Proc.new {|x| #do something}
 ```
 There are three ways to call a Proc
 - ```x = anothervariable.select(&name)```
-example: youngsters = ages.select (&under_100)
 - ```anothervariable(&name)```
 - ```name.call```
 
@@ -303,3 +303,39 @@ Lambdas are objects. A Lambda is just like a proc, only it cares about the numbe
 ```
 nameofvariable = lambda {|param| block}
 ```
+
+Some methods
+- .nil? -----------#are you nil? are you empty?
+- .length ---------#largo de un string ej. "i love tokyo".length = 12
+- .reverse --------#da el nombre al revés ej "camila".reverse = alimac
+- .reverse! -------#modifica y reversa
+- .upcase ---------#MAYUSCULAS
+- .downcase -------#minusculas
+- .capitalize -----#Capitaliza la primera letra
+- .capitalize! ----#el ! modifica el valor de contenido en una variable
+- .x! -------------#se usa para modificar el input en el momento, y no crear una copia
+- .x? -------------#evalua valores boolean true or false
+- .gets -----------#obtiene input from the user ej. gets.chomp
+- .chomp ----------#elimina la línea en blanco luego del input del usuario
+- .include? -------#ej. include? "s"
+- .gsub -----------#global substitution. Used for search and replace
+- .gsub!(wordtofind, wordtoreplace) ----#replace the code in the place
+- .split() --------#string to array, ('') = por palabra, (//) = por letra
+- .join(" ")-------#array to string, si va sin("") queda todo junto. ["a","b","c"].join = abc
+- .to_s -----------#convert to string
+- .to_sym ---------#convert to symbol
+- .intern ---------#convert to symbol
+- .to_i -----------#convert to integer
+- .to_f -----------#convert to float 5.to_f = 5.0
+- .sort -----------#return un nuevo array clasificado A-Z, 1-100
+- .sort! ----------#ordena el array y lo modifica
+- .collect{|x|#} --#
+- .collect!{|x|#} -#es lo mismo, pero cambia el valor del array original
+- .object_id ------#gets the ID of an object
+- .upto() ---------#va de un rango a otro. ej: 95.upto(100){|x| print x, ""}
+- .downto() -------#va de un rango a otro. ej: "Z".downto("A"){|x| puts x}
+- .respond_to? ----#forma de saber si un objeto puede recibir cierto método. ej: [1,2,3].respond_to?(:push) da un true or false
+- .class ----------#que clase de objeto es, string, integer, float, etc
+- .is_a?(String) --#pregunta el tipo de clase, en este caso es un string?
+- .has_key?("x") --#pregunta si existe un key en un hash, retorna boolean. ejemplo my_hash.has_a?("color") = true
+- .strip ----------#quita espacios y lineas de un string
