@@ -87,12 +87,12 @@ They declare values. Begins with a lowercase letter or underscore, but not with 
 $global
 @instances 
 @@class
-variable_name
+local
 ```
-- Global variables are the same in every part of the program, and visible everywhere in the program.
-- Instance variables define the attributes of an only object.  Available across methods for any particular instance or object. It changes from object to object
-- Class variables define the attributes of many objects. Its scope is all the instances of a class.
-- Local variables are reachable in its own module, method or block.
+- **Global variables** are the same in every part of the program, and visible everywhere in the program.
+- **Instance variables** define the attributes of an only object, and available across methods for any particular instance or object. It changes from object to object
+- **Class variables** define the attributes of many objects. Its scope is all the instances of a class.
+- **Local variables** are reachable in its own module, method or block.
 
 ##if / elseif / else
 **If**
@@ -124,22 +124,22 @@ end
 **If then (one line)**
 ```
 if condition then #do something end
-
-example: if x< 10 then x+=1 end
 ```
+example: if x< 10 then x+=1 end
+
 **If (one line)**
 ```
 action if condition
-
-example: puts "hello" if true
 ```
+example: puts "hello" if true
+
 **Ternary conditional expresion (three arguments)**
 This is a shorthand statement for a simple if...else statement
 ```
 boolean ? do this if true: do this if false 
-
-example: puts 3 < 4 ? "3 is less than 4!" : "3 is not less than 4!"
 ```
+example: puts 3 < 4 ? "3 is less than 4!" : "3 is not less than 4!"
+
 It's the same as:
 if true
 puts "True!"
@@ -153,11 +153,12 @@ unless condition
 else
 end
 ```
-**Unless(one line)**
+**Unless (one line)**
 ```
 action unless condition
 ```
 **Case**
+
 If we have a lot of conditions to check
 ```
 case name
