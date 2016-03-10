@@ -64,16 +64,11 @@ EmpireStateBuilding = "350 5th Avenue, NYC, NYC"
 
 ##Variables
 They declare values. Begins with a lowercase letter or underscore, but not with a number. 
-```
-$global
-@instances 
-@@class
-local
-```
-- **Global variables** are the same in every part of the program, and visible everywhere in the program.
-- **Instance variables** define the attributes of an only object, and available across methods for any particular instance or object. It changes from object to object
-- **Class variables** define the attributes of many objects. Its scope is all the instances of a class.
-- **Local variables** are reachable in its own module, method or block.
+
+- `$global` **Global variables** are the same in every part of the program, and visible everywhere in the program.
+- `@instances` **Instance variables** define the attributes of an only object, and available across methods for any particular instance or object. It changes from object to object
+- `@@class` **Class variables** define the attributes of many objects. Its scope is all the instances of a class.
+- `local` **Local variables** are reachable in its own module, method or block.
 
 ##If / elseif / else
 **If**
@@ -104,7 +99,7 @@ end
 ```
 **If then (one line)**
 ```
-if condition then #do something end
+if condition then #dosomething end
 ```
 example: `if x< 10 then x+=1 end`
 
@@ -120,13 +115,6 @@ This is a shorthand statement for a simple if...else statement
 boolean ? do this if true: do this if false 
 ```
 example: `puts 3 < 4 ? "3 is less than 4!" : "3 is not less than 4!"`
-
-It's the same as:
-if true
-puts "True!"
-else
-puts "False"
-end
 
 **Unless**
 ```
@@ -168,7 +156,7 @@ end
 ##Loop (while, until, for)
 **While loop**
 
-It loops an action while the condition is true, but you don't know how many times you ave to repeat it. Be careful with the variables, they shouldn't be infinite. 
+It loops an action while the condition is true, but you don't know how many times you have to repeat it. Be careful with the variables, they shouldn't be infinite. 
 ```
 while conditional do
   #do something
@@ -190,7 +178,7 @@ for iterator in iterable_object
   #do something
 end
 ```
-example: for num in 1...10 puts num end
+example: `for num in 1...10 puts num end`
 
 ##Class
 A class is a way of organizing and producing objects with similar attributes and methods. It's a blueprint. For example, a car has global characteristics that vary ( wheels, horsepower, fuel, gas tank) and it has functions (driving, speeding). A class contains the characteristics and functions. Diferent values create different instances: a ferrari, a volvo, etc.
@@ -247,7 +235,7 @@ end
 ```
 
 ##Blocks
-Blocks are not objects, but a way to create methods without a name. Can be combined with methods like .each and .times).
+Blocks are not objects, but a way to create methods without a name. Can be combined with methods like .each and .times.
 
 **for multiple lines**:
 ```
@@ -267,7 +255,7 @@ def method_name(parameter)
 yield parameter
 end
 
-method_name(argument) {#block]
+method_name(argument) {#block}
 ```
 
 ##Procs
