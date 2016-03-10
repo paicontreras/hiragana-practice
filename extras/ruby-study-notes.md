@@ -125,20 +125,20 @@ end
 ```
 if condition then #do something end
 ```
-example: if x< 10 then x+=1 end
+example: `if x< 10 then x+=1 end`
 
 **If (one line)**
 ```
 action if condition
 ```
-example: puts "hello" if true
+example: `puts "hello" if true`
 
 **Ternary conditional expresion (three arguments)**
 This is a shorthand statement for a simple if...else statement
 ```
 boolean ? do this if true: do this if false 
 ```
-example: puts 3 < 4 ? "3 is less than 4!" : "3 is not less than 4!"
+example: `puts 3 < 4 ? "3 is less than 4!" : "3 is not less than 4!"`
 
 It's the same as:
 if true
@@ -243,6 +243,7 @@ puts hello("Mr.Ruby") = Mr Ruby is 99 years old
 ```
 
 **.each method**
+
 It loops through each item in a list, hash, or other iterable object allowing you to perform operations on that value
 ```
 .each
@@ -279,7 +280,7 @@ end
 blockname{}
 ```
 
-yield
+**yield**
 ```
 def method_name(parameter)
 yield parameter
@@ -294,9 +295,9 @@ Procs are objects. A proc is a saved block we can use over and over.
 name = Proc.new {|x| #do something}
 ```
 There are three ways to call a Proc
-- ```x = anothervariable.select(&name)```
-- ```anothervariable(&name)```
-- ```name.call```
+- `x = anothervariable.select(&name)`
+- `anothervariable(&name)`
+- `name.call`
 
 ##Lambdas
 Lambdas are objects. A Lambda is just like a proc, only it cares about the number of arguments it gets, and it returns to its calling method rather than returning immediately.
@@ -313,7 +314,7 @@ nameofvariable = lambda {|param| block}
 - `.downcase`
 - `.capitalize`
 - `.capitalize!`
-- `.x!` #modifies an input without creating a copy
+- `.x!` modifies an input without creating a copy
 - `.x?` evaluate boolean true or false values
 - `.gets` obtains input from the user. example: gets.chomp
 - `.chomp` delete a line after the user's input
@@ -334,8 +335,8 @@ nameofvariable = lambda {|param| block}
 - `.object_id` gets the ID of an object
 - `.upto()` from a value up to a limit value. example: 95.upto(100){|x| print x, ""}
 - `.downto()` from a value down to a limit value. example: "Z".downto("A"){|x| puts x}
-- `.respond_to?` Methods that respond to an object. example: [1,2,3].respond_to?(:push) 
-- `.class` What kind of objects it is? A String, integer, float, etc
+- `.respond_to?` what methods that respond to an object. example: [1,2,3].respond_to?(:push) 
+- `.class` what kind of objects it is? A String, integer, float, etc
 - `.is_a?(String)` ask the kind of class. It is a string? a boolean?
 - `.has_key?("x")` return a boolean. example my_hash.has_a?("color") = true
 - `.strip` delete spaces and lines in a string
@@ -363,7 +364,7 @@ nameofvariable = lambda {|param| block}
 - `||=` assign a value to a variable only if doesn't have a value
 - `\n` new line -> 5.times {print "hello\n"}
 - `#{hi}` strign interpolation
-- `<<` #shovel, add an element at the end. example: "Bart" <<"Simpson" = "Bart Simpson"
+- `<<` shovel, add an element at the end. example: "Bart" <<"Simpson" = "Bart Simpson"
 - `break` kicks you out of an iterating loop. break if i<0
-- `next` #jumps a value. example: next if i % 2 == 0, print i
+- `next` jumps a value. example: next if i % 2 == 0, print i
 - `nil` nothing at all, non-true value
