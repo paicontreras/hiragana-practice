@@ -339,3 +339,31 @@ Some methods
 - .is_a?(String) --#pregunta el tipo de clase, en este caso es un string?
 - .has_key?("x") --#pregunta si existe un key en un hash, retorna boolean. ejemplo my_hash.has_a?("color") = true
 - .strip ----------#quita espacios y lineas de un string
+
+
+##Keywords
+- print " "--#imprime string
+- p ---------#imprime cualquier cosa, no sólo string
+- w= writing
+- r ---------#reading
+- a ---------#add to end of a file
+- * ---------#'idea-*.txt' -> match anything that starts with idea y termina en txt
+- puts ------#coloca cada cosa en una nueva línea
+- return ----#retorna un valor, se usa en methods.
+- Integer ---#numero entero
+- Float -----#decimal numbers
+- # ---------#comments
+- == -------#comparator; equal to
+- != --------#not equal
+- && ------#and, ambas expresiones son true
+- || ----------#or, una u otra es verdadera
+- ! ----------#not; makes true values false, and viceversa
+- ** ------- #exponencial (elevado a -> 2***3 = 8
+- % --------#remainder of division 25%7 = 4
+- ||= -----#asigna una variable solo si no ha sido asignada
+- \n -------#new line, se usa 5.times {print "hello\n"}
+- #{hi} ----#strign interpolation
+- << -------#shovel, añade un elemento al final. ej "Bart" <<"Simpson" = "Bart Simpson"
+- break ----#kicks you out of an iterating loop. break if i<0
+- next -----#salta un valor. ejemplo: next if i % 2 == 0, print i
+- nil ------#nothing at all, non-true value
