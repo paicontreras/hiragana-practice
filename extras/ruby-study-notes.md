@@ -27,9 +27,9 @@ To add an element at the end of an array
 **Literal notation**
 ```
 my_hash = {
-key1: value1,
-key2: value2,
-key3: value3
+  key1: value1,
+  key2: value2,
+  key3: value3
 }
 puts my_hash["key1"] 
 ```
@@ -98,27 +98,27 @@ local
 **If**
 ```
 if condition
-#do something
+  #do something
 end
 ```
 **If/else**
 ```
 if condition
-#do something
+  #do something
 else
-#do something
+  #do something
 end
 ```
 **If/elseif/else**
 ```
 if condition
-#do something
+  #do something
 elseif condition
-#do something
+  #do something
 elseif condition
-#do something
+  #do something
 else
-#do something
+  #do something
 end
 ```
 **If then (one line)**
@@ -150,9 +150,9 @@ end
 **Unless**
 ```
 unless condition
-#do something
+  #do something
 else
-#do something
+  #do something
 end
 ```
 **Unless (one line)**
@@ -165,22 +165,22 @@ If we have a lot of conditions to check
 ```
 case name
 when "A"
-#do something
+  #do something
 when "B"
-#do something
+  #do something
 when "C"
-#do something
+  #do something
 else
-#do something
+  #do something
 end
 ```
 **Case (short version)**
 ```
 case name
-when x1 then #do something
-when x2 then #do something
-when x3 then #do something
-else #do something
+  when x1 then #do something
+  when x2 then #do something
+  when x3 then #do something
+  else #do something
 end
 ```
 
@@ -190,7 +190,7 @@ end
 It loops an action while the condition is true, but you don't know how many times you ave to repeat it. Be careful with the variables, they shouldn't be infinite. 
 ```
 while conditional do
-#do something
+  #do something
 end
 ```
 **Until loop**
@@ -198,7 +198,7 @@ end
 It loops until a true condition is met
 ```
 until conditional do
-#do something
+  #do something
 end
 ```
 **For loop**
@@ -206,7 +206,20 @@ end
 It isn't used as often as .each because it creates a new scope. It's used when you know how many times you will loop. 
 ```
 for iterator in iterable_object
-#do something
+  #do something
 end
 ```
 example: for num in 1...10 puts num end
+
+##Class
+**********************************************************************
+(Se utiliza cuando se necesita para crear una instancia de una variable o de herencia. Puede ser privado (después de private keyword). Es un blueprint del cual objetos indivuales son creados, por ejemplo un auto tiene caracteristicas globales, wheels, horsepower, fuel, gas tank que van variando. y además tiene funciones como driving, speeding, etc. La clase es la caracteristica + funciones. Diferentes valores dan diferentes instancias: un ferrari, un volvo, etc.)
+```
+class Name
+  def namemethod
+  #Do something
+  end
+end
+
+name = Nombreclase.new()
+```
