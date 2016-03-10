@@ -293,10 +293,10 @@ Procs are objects. A proc is a saved block we can use over and over.
 name = Proc.new {|x| #do something}
 ```
 There are three ways to call a Proc
-1. ```x = anothervariable.select(&name)```
+- ```x = anothervariable.select(&name)```
 example: youngsters = ages.select (&under_100)
-2. ```anothervariable(&name)```
-3. ```name.call```
+- ```anothervariable(&name)```
+- ```name.call```
 
 ##Lambdas
 Lambdas are objects. A Lambda is just like a proc, only it cares about the number of arguments it gets, and it returns to its calling method rather than returning immediately.
