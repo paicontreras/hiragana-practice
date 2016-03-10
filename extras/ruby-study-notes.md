@@ -8,6 +8,7 @@
 - Symbols = :symbol
 - Boolean = true, false, nil 
 - Constants = "value"
+
 ###Array
 ```
 my_array = [1, 2, true, "no"]
@@ -32,5 +33,5 @@ key1: value1,
 key2: value2,
 key3: value3
 }
-puts my_hash["key1"]
+puts my_hash["key1"] 
 ```
