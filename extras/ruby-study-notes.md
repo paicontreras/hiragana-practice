@@ -212,8 +212,7 @@ end
 example: for num in 1...10 puts num end
 
 ##Class
-**********************************************************************
-(Se utiliza cuando se necesita para crear una instancia de una variable o de herencia. Puede ser privado (después de private keyword). Es un blueprint del cual objetos indivuales son creados, por ejemplo un auto tiene caracteristicas globales, wheels, horsepower, fuel, gas tank que van variando. y además tiene funciones como driving, speeding, etc. La clase es la caracteristica + funciones. Diferentes valores dan diferentes instancias: un ferrari, un volvo, etc.)
+A class is a way of organizing and producing objects with similar attributes and methods. It's a blueprint. For example, a car has global characteristics that vary ( wheels, horsepower, fuel, gas tank) and it has functions (driving, speeding). A class contains the characteristics and functions. Diferent values create different instances: a ferrari, a volvo, etc.
 ```
 class Name
   def namemethod
@@ -223,3 +222,29 @@ end
 
 name = Nombreclase.new()
 ```
+
+##Methods
+A method is a reusable section of code written to perform a specific task in a program. First you define it, then you call it. The parameter is the name you put between the method's parentheses when you define it, instead the argument is the piece of code you put between the method's parentheses when you call it. Call it with a dot.
+```
+def namemethod(arguments)
+  #codeblock
+end
+
+namemethod(parameter)
+```
+
+Default value
+```
+def namemethod(arguments, argument = 99)
+  #codeblock
+end
+
+namemethod(parameter)
+```
+example: 
+def hello (name, age=99) 
+  puts "#{name} is #{age} years old" 
+end
+
+  puts hello("Mr.Ruby") = Mr Ruby is 99 years old
+
