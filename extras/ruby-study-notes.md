@@ -172,6 +172,8 @@ when x3 then y3
 else y4
 end
 ```
+
+##Loop
 **While loop**
 It loops an action while the condition is true, but you don't know how many times you ave to repeat it. Be careful with the variables, they shouldn't be infinite. 
 ```
