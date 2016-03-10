@@ -38,28 +38,25 @@ puts my_hash["key1"]
 my_hash = Hash.new
 my_hash["key1"] = "value1"
 ```
+
 Default value
-```
-my_hash = Hash.new(0)
-```
+```my_hash = Hash.new(0)```
 
 Delete a hash key
-```
-my_hash.delete(key)
-```
+```my_hash.delete(key)```
+
 Iterate over a hash
-```
-hash.each {|key, value|    }
-```
+```hash.each {|key, value|    }```
+
 Select a certain criteria
-```
-hash.select {|key, value| value < 97}
-```
-Iterate over keys or values only
-```
-hash.each_key
-hash.each_value
-```
+```hash.select {|key, value| value < 97}```
+
+Iterate over keys only
+```hash.each_key```
+
+Iterate over values only
+```hash.each_value```
+
 
 ##Symbols
 In Ruby, a symbol is simply a name used in your program. It is used when you need a string but you don't want to print it
@@ -175,6 +172,7 @@ end
 
 ##Loop
 **While loop**
+
 It loops an action while the condition is true, but you don't know how many times you ave to repeat it. Be careful with the variables, they shouldn't be infinite. 
 ```
 while conditional do
@@ -182,6 +180,7 @@ while conditional do
 end
 ```
 **Until loop**
+
 It loops until a true condition is met
 ```
 until conditional do
@@ -189,11 +188,11 @@ until conditional do
 end
 ```
 **For loop**
+
 It isn't used as often as .each because it creates a new scope. It's used when you know how many times you will loop. 
 ```
 for iterator in iterable_object
 #Do something
 end
-
-example: for num in 1...10 puts num end
 ```
+example: for num in 1...10 puts num end
