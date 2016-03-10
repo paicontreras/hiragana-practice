@@ -72,3 +72,126 @@ Start with a capital letter, and aren't meant to be changed
 ```
 EmpireStateBuilding = "350 5th Avenue, NYC, NYC"
 ```
+
+##Variables
+They declare values. Begins with a lowercase letter or underscore, but not with a number. 
+```
+$global
+@instances 
+@@class
+variable_name
+```
+- Global variables are the same in every part of the program, and visible everywhere in the program.
+- Instance variables define the attributes of an only object.  Available across methods for any particular instance or object. It changes from object to object
+- Class variables define the attributes of many objects. Its scope is all the instances of a class.
+- Local variables are reachable in its own module, method or block.
+
+##if / elseif / else
+**If**
+```
+if condition
+#do something
+end
+```
+**If/else**
+```
+if condition
+#do something
+else
+#do something
+end
+```
+**If/elseif/else**
+```
+if condition
+#do something
+elseif condition
+#do something
+elseif condition
+#do something
+else
+#do something
+end
+```
+**If then (one line)**
+```
+if condition then #do something end
+
+example: if x< 10 then x+=1 end
+```
+**If (one line)**
+```
+action if condition
+
+example: puts "hello" if true
+```
+**Ternary conditional expresion (three arguments)**
+This is a shorthand statement for a simple if...else statement
+```
+boolean ? do this if true: do this if false 
+
+example: puts 3 < 4 ? "3 is less than 4!" : "3 is not less than 4!"
+```
+It's the same as:
+if true
+puts "True!"
+else
+puts "False"
+end
+
+**Unless**
+```
+unless condition
+else
+end
+```
+**Unless(one line)**
+```
+action unless condition
+```
+**Case**
+If we have a lot of conditions to check
+```
+case name
+when "A"
+#do something
+when "B"
+#do something
+when "C"
+#do something
+else
+#do something
+end
+```
+**Case (short version)**
+```
+case name
+when x1 then y1
+when x2 then y2
+when x3 then y3
+else y4
+end
+```
+**While loop**
+It loops an action while the condition is true, but you don't know how many times you ave to repeat it. Be careful with the variables, they shouldn't be infinite. 
+```
+while conditional do
+#do something
+end
+```
+**Until loop**
+It loops until a true condition is met
+```
+until conditional do
+#do something
+end
+```
+**For loop**
+It isn't used as often as .each because it creates a new scope. It's used when you know how many times you will loop. 
+```
+for iterator in iterable_object
+#Do something
+end
+
+example: for num in 1...10 puts num end
+```
