@@ -304,66 +304,66 @@ Lambdas are objects. A Lambda is just like a proc, only it cares about the numbe
 nameofvariable = lambda {|param| block}
 ```
 
-Some methods
-- `.nil?` -----------#are you nil? are you empty?
-- `.length` ---------#largo de un string ej. "i love tokyo".length = 12
-- `.reverse` --------#da el nombre al revés ej "camila".reverse = alimac
-- `.reverse!` -------#modifica y reversa
-- `.upcase` ---------#MAYUSCULAS
-- `.downcase` -------#minusculas
-- `.capitalize` -----#Capitaliza la primera letra
-- `.capitalize!` ----#el ! modifica el valor de contenido en una variable
-- `.x!` -------------#se usa para modificar el input en el momento, y no crear una copia
-- `.x?` -------------#evalua valores boolean true or false
-- `.gets` -----------#obtiene input from the user ej. gets.chomp
-- `.chomp` ----------#elimina la línea en blanco luego del input del usuario
-- `.include?` -------#ej. include? "s"
-- `.gsub` -----------#global substitution. Used for search and replace
-- `.gsub!(wordtofind, wordtoreplace)` ----#replace the code in the place
-- `.split()` --------#string to array, ('') = por palabra, (//) = por letra
-- `.join(" ")` -------#array to string, si va sin("") queda todo junto. ["a","b","c"].join = abc
-- `.to_s` -----------#convert to string
-- `.to_sym` ---------#convert to symbol
-- `.intern` ---------#convert to symbol
-- `.to_i` -----------#convert to integer
-- `.to_f` -----------#convert to float 5.to_f = 5.0
-- `.sort` -----------#return un nuevo array clasificado A-Z, 1-100
-- `.sort!` ----------#ordena el array y lo modifica
-- `.collect{|x|#}` --#
-- `.collect!{|x|#}` -#es lo mismo, pero cambia el valor del array original
-- `.object_id` ------#gets the ID of an object
-- `.upto()` ---------#va de un rango a otro. ej: 95.upto(100){|x| print x, ""}
-- `.downto()` -------#va de un rango a otro. ej: "Z".downto("A"){|x| puts x}
-- `.respond_to?` ----#forma de saber si un objeto puede recibir cierto método. ej: [1,2,3].respond_to?(:push) da un true or false
-- `.class` ----------#que clase de objeto es, string, integer, float, etc
-- `.is_a?(String)` --#pregunta el tipo de clase, en este caso es un string?
-- `.has_key?("x")` --#pregunta si existe un key en un hash, retorna boolean. ejemplo my_hash.has_a?("color") = true
-- `.strip` ----------#quita espacios y lineas de un string
+##Some methods
+- `.nil?` are you nil? are you empty?
+- `.length` example "i love tokyo".length = 12
+- `.reverse` reverse a string. example "bota".reverse = "atob"
+- `.reverse!` modify and reverse a string
+- `.upcase` 
+- `.downcase`
+- `.capitalize`
+- `.capitalize!`
+- `.x!` #modifies an input without creating a copy
+- `.x?` evaluate boolean true or false values
+- `.gets` obtains input from the user. example: gets.chomp
+- `.chomp` delete a line after the user's input
+- `.include?` 
+- `.gsub` global substitution. Used for search and replace
+- `.gsub!(wordtofind, wordtoreplace)` replace the code in the place
+- `.split()` string to array
+- `.join(" ")` array to string.
+- `.to_s` convert to string
+- `.to_sym` convert to symbol
+- `.intern` convert to symbol
+- `.to_i` convert to integer
+- `.to_f` convert to float. example: 5.to_f = 5.0
+- `.sort` return a new reorder array. From A to Z, 1 to 1000..
+- `.sort!` reorder an array and modifies it 
+- `.collect{|x|#}` 
+- `.collect!{|x|#}` 
+- `.object_id` gets the ID of an object
+- `.upto()` from a value up to a limit value. example: 95.upto(100){|x| print x, ""}
+- `.downto()` from a value down to a limit value. example: "Z".downto("A"){|x| puts x}
+- `.respond_to?` Methods that respond to an object. example: [1,2,3].respond_to?(:push) 
+- `.class` What kind of objects it is? A String, integer, float, etc
+- `.is_a?(String)` ask the kind of class. It is a string? a boolean?
+- `.has_key?("x")` return a boolean. example my_hash.has_a?("color") = true
+- `.strip` delete spaces and lines in a string
 
 
 ##Keywords
-- `print " "`--#imprime string
-- `p` ---------#imprime cualquier cosa, no sólo string
-- `w` -------- writing
-- `r` ---------#reading
-- `a` ---------#add to end of a file
-- `*` ---------#'idea-*.txt' -> match anything that starts with idea y termina en txt
-- `puts` ------#coloca cada cosa en una nueva línea
-- `return` ----#retorna un valor, se usa en methods.
-- `Integer` ---#numero entero
-- `Float` -----#decimal numbers
-- `#` ---------#comments
-- `==` -------#comparator; equal to
-- `!=` --------#not equal
-- `&&` ------#and, ambas expresiones son true
-- `||` ----------#or, una u otra es verdadera
-- `!` ----------#not; makes true values false, and viceversa
-- `**` ------- #exponencial (elevado a -> 2***3 = 8
-- `%` --------#remainder of division 25%7 = 4
-- `||=` -----#asigna una variable solo si no ha sido asignada
-- `\n` -------#new line, se usa 5.times {print "hello\n"}
-- `#{hi}` ----#strign interpolation
-- `<<` -------#shovel, añade un elemento al final. ej "Bart" <<"Simpson" = "Bart Simpson"
-- `break` ----#kicks you out of an iterating loop. break if i<0
-- `next` -----#salta un valor. ejemplo: next if i % 2 == 0, print i
-- `nil` ------#nothing at all, non-true value
+- `print " "` print a string
+- `p` print everything, not only a string
+- `w` writing
+- `r` reading
+- `a` add to end of a file
+- `*` 'idea-*.txt' 
+- `puts` puts everything in a new line
+- `return` returns a value. It's used in methods
+- `Integer` 
+- `Float` decimal numbers
+- `#` comments
+- `==` comparator; equal to
+- `!=` not equal
+- `&&` and, both expressions are true
+- `||` or, one or the other are true
+- `!` not; makes true values false, and viceversa
+- `**` exponential -> 2***3 = 8
+- `%` remainder of division 25%7 = 4
+- `||=` assign a value to a variable only if doesn't have a value
+- `\n` new line -> 5.times {print "hello\n"}
+- `#{hi}` strign interpolation
+- `<<` #shovel, add an element at the end. example: "Bart" <<"Simpson" = "Bart Simpson"
+- `break` kicks you out of an iterating loop. break if i<0
+- `next` #jumps a value. example: next if i % 2 == 0, print i
+- `nil` nothing at all, non-true value
