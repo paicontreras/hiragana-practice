@@ -233,18 +233,73 @@ end
 namemethod(parameter)
 ```
 
-Default value
+Default value example
 ```
-def namemethod(arguments, argument = 99)
-  #codeblock
-end
-
-namemethod(parameter)
-```
-example: 
-def hello (name, age=99) 
+def hello(name, age=99)
   puts "#{name} is #{age} years old" 
 end
 
-  puts hello("Mr.Ruby") = Mr Ruby is 99 years old
+puts hello("Mr.Ruby") = Mr Ruby is 99 years old
+```
 
+**.each method**
+It loops through each item in a list, hash, or other iterable object allowing you to perform operations on that value
+```
+.each
+object.each {|item| #Do something}
+```
+```
+.each
+object.each do item #Do something
+end
+```
+**.times method**
+```
+#4.times {puts "hola-"} = hola-hola-hola-hola-
+```
+**descending order method**
+```
+books.sort! do |firstBook, secondBook|
+firstBook <=>secondBook
+end
+```
+
+##Blocks
+Blocks are not objects, but a way to create methods without a name. Can be combined with methods like .each and .times).
+
+(for multiple lines):
+```
+blockname do
+  #do something
+end
+```
+
+(for a single line):
+```
+blockname{}
+```
+
+yield
+```
+def method_name(parameter)
+yield parameter
+end
+```
+method_name(argument) {#block]
+
+##Procs
+Procs are objects. A proc is a saved block we can use over and over.
+```
+name = Proc.new {|x| #do something}
+```
+There are three ways to call a Proc
+1. ```x = anothervariable.select(&name)```
+example: youngsters = ages.select (&under_100)
+2. ```anothervariable(&name)```
+3. ```name.call```
+
+##Lambdas
+Lambdas are objects. A Lambda is just like a proc, only it cares about the number of arguments it gets, and it returns to its calling method rather than returning immediately.
+```
+nameofvariable = lambda {|param| block}
+```
