@@ -94,7 +94,7 @@ local
 - **Class variables** define the attributes of many objects. Its scope is all the instances of a class.
 - **Local variables** are reachable in its own module, method or block.
 
-##if / elseif / else
+##If / elseif / else
 **If**
 ```
 if condition
