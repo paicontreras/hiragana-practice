@@ -8,7 +8,6 @@
 - Symbols = :symbol
 - Boolean = true, false, nil 
 - Constants = "value"
-
 ###Array
 ```
 my_array = [1, 2, true, "no"]
@@ -22,4 +21,16 @@ multi_array[0][2] = 2
 **To add an element at the end of an array**
 ```
 [1, 2, 3]<<4 = [1, 2, 3, 4]
+```
+
+###Hashes
+
+**Literal notation**
+```
+my_hash = {
+key1: value1,
+key2: value2,
+key3: value3
+}
+puts my_hash["key1"]
 ```
