@@ -339,13 +339,8 @@ nameofvariable = lambda {|param| block}
 - `nil` nothing at all, non-true value
 
 ##Notes
-
-x += 1 -------- incrementa un valor a x
-
-1..10 -------- va de 1 incluyendo al 10
-
-1...10 -------- va de 1 a 9, excluye al 10
-
-string[0..-1] - refers to the range del primero hasta el final de los caracteres
-
-5/2 = 2 ------- para obtener decimales un numero al menos debe ser decimal: 5/2.0 = 2.5
+`x += 1` increases 1 to x 
+`1..10` includes 10
+`1...10` excludes 10 
+`string[0..-1]` refers to the range from the uno to the end of the characters
+`5/2 = 2` to obtain decimal numbers a number must be a decimal `5/2.0 = 2.5`
