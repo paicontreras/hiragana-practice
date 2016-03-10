@@ -150,7 +150,9 @@ end
 **Unless**
 ```
 unless condition
+#do something
 else
+#do something
 end
 ```
 **Unless (one line)**
@@ -175,10 +177,10 @@ end
 **Case (short version)**
 ```
 case name
-when x1 then y1
-when x2 then y2
-when x3 then y3
-else y4
+when x1 then #do something
+when x2 then #do something
+when x3 then #do something
+else #do something
 end
 ```
 
@@ -204,7 +206,7 @@ end
 It isn't used as often as .each because it creates a new scope. It's used when you know how many times you will loop. 
 ```
 for iterator in iterable_object
-#Do something
+#do something
 end
 ```
 example: for num in 1...10 puts num end
