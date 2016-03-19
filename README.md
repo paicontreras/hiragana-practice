@@ -10,7 +10,7 @@ There are two main contents in this repository:
 - The resources that helped me to learn Ruby (in /extras folder)
 
 ##How to install Ruby on Rails 
-[This useful website](http://installrails.com/steps/choose_os) can help you.
+[This useful website](http://installrails.com/steps/choose_os) can help you to install. And [this one](http://guides.rubyonrails.org/getting_started.html) to start.
 
 
 ##What is "Learn IT, Girl!"?
