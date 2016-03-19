@@ -9,6 +9,10 @@ There are two main contents in this repository:
 - The files of the hiragana project
 - The resources that helped me to learn Ruby (in /extras folder)
 
+##How to install Ruby on Rails 
+[This useful website](http://installrails.com/steps/choose_os) can help you.
+
+
 ##What is "Learn IT, Girl!"?
 Learn IT Girl is a mentorship program for women around the globe. The aim is to help women learn a programming language for free while doing an project with the help of a mentor.
 
