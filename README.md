@@ -6,7 +6,7 @@ This project is part of "Learn IT, Girl" program. My amazing mentor is Anahita D
 
 ##How to use this Repository
 There are two main contents in this repository: 
-- The files of the hiragana project
+- The files of the hiragana project (in hiragana_app)
 - The resources that helped me to learn Ruby (in /extras folder)
 
 ##How to install Ruby on Rails 
