@@ -13,3 +13,6 @@
 ###Books
 - [Why’s (Poignant) Guide to Ruby](http://poignant.guide/book/chapter-1.html)
 - [Learn Ruby The Hard Way](http://learnrubythehardway.org/book/index.html)
+
+##Videos
+-[Rails Tutorial: Build a Website in 12 minutes]https://www.youtube.com/watch?v=quLmIuIrIig
