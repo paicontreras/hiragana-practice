@@ -15,4 +15,4 @@
 - [Learn Ruby The Hard Way](http://learnrubythehardway.org/book/index.html)
 
 ##Videos
--[Rails Tutorial: Build a Website in 12 minutes]https://www.youtube.com/watch?v=quLmIuIrIig
+-[Rails Tutorial: Build a Website in 12 minutes](https://www.youtube.com/watch?v=quLmIuIrIig)
