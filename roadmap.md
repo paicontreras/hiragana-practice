@@ -19,8 +19,8 @@ When you learn Japanese, you need to memorize two complete syllabaries of 46 sym
 - [x] Complete the Object Oriented Programming section in Codecademy
 
 **Week 4**
-- [ ] Download Ruby and an editor
-- [ ] Start tests of the program
+- [x] Download Ruby and an editor
+- [x] Start tests of the program
 - [ ] Create wireframes for the UI of the program
 
 **Week 5 and 6 **
