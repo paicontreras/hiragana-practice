@@ -21,22 +21,22 @@ When you learn Japanese, you need to memorize two complete syllabaries of 46 sym
 **Week 4**
 - [x] Download Ruby and an editor
 - [x] Start tests of the program
-- [ ] Create wireframes for the UI of the program
+- [x] Create wireframes for the UI of the program
 
 **Week 5 and 6 **
-- [ ] Keep writing test, run them and fix any bugs that appear
+- [x] Keep writing test, run them and fix any bugs that appear
 
 **Week 7**
-- [ ] Test the application manually
-- [ ] Commit to GitHub
+- [x] Test the application manually
+- [x] Commit to GitHub
 
 **Week 8**
-- [ ] Fix the problems and re-write the code
+- [x] Fix the problems and re-write the code
 
 **Week 9**
 - [ ] Create mockups for the UI
-- [ ] Keep writing test, run them and fix any bugs that appear
-- [ ] Commit to GitHub
+- [x] Keep writing test, run them and fix any bugs that appear
+- [x] Commit to GitHub
 
 **Week 10 and 11**
 - [ ] Add funcionality to the user interface
