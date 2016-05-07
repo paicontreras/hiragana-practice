@@ -1,0 +1,8 @@
+<p>(New)</p>
+
+<h1><%=@word[0][1]%></h1>
+
+<%= form_for :translation, url: translations_path do |f| %>
+<p><%= f.text_field :text %></p>
+<p><%= f.submit %></p>
+<% end %>

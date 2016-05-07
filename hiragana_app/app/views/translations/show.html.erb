@@ -1,0 +1,11 @@
+<p>(Show)</p>
+
+<h1><%= @word[0][0]%></h1>
+<h1><%= @translation.text %></h1>
+
+	<% if @translation.text == @word[0][1]%>
+<p>Well done!</p>
+	<%else%>
+<p>You made a little mistake. It was: <%= @word[0][1]%></p>
+	<%end%>
+	
